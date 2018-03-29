@@ -221,4 +221,16 @@ public class DMComponent {
 			return name; 
 		}
 	}
+
+	public void removeList(String name) {
+		// TODO Auto-generated method stub
+		int index = getIndexForList(name); 
+		if (index == -1) 
+			IOComponent.getComponent().output("Remove list name " + name + ".\n"); 
+		else { 
+			
+			lol.remove(index);
+			
+	}
+}
 }
